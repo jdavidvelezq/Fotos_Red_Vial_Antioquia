@@ -11,22 +11,51 @@
   <header>
     <div class="container">
       <h1>Fotos Red Vial Antioquia</h1>
-      <p>Módulo de Carga e Inventario Fotográfico</p>
+      <p>Módulo de Carga e Inventario Fotográfico • Secretaría de Infraestructura</p>
     </div>
   </header>
 
   <main class="container">
-    <!-- Selector de Archivos -->
-    <section class="selector-box">
+    <!-- Selector de Archivos y Zona Drag & Drop -->
+    <section class="selector-box" id="dropArea" title="Haga clic o arrastre fotografías de inspección aquí">
       <h2>Seleccionar Fotografías de Inspección</h2>
-      <p>Formatos aceptados: JPG, PNG, WEBP (hasta 20 MB por archivo)</p>
+      <p>Arrastre y suelte fotos aquí o examine desde su dispositivo</p>
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Formatos aceptados: JPG, PNG, WEBP (hasta 20 MB por archivo • EXIF GPS automático)</p>
       <label for="filePicker" class="btn-select">Examinar Archivos</label>
       <input type="file" id="filePicker" multiple accept="image/jpeg,image/png,image/webp" />
     </section>
 
+    <!-- Barra de Relleno Rápido de Lote (Aparece al haber fotos) -->
+    <section class="batch-toolbar" id="batchToolbar" style="display: none;">
+      <div class="batch-toolbar-header">
+        ⚡ Relleno Rápido: Aplicar Contrato y Vía a todas las fotos seleccionadas
+      </div>
+      <div class="batch-grid">
+        <div class="form-group">
+          <label>Contrato común:</label>
+          <input type="text" id="batchContrato" placeholder="Ej: 4600018621" />
+        </div>
+        <div class="form-group">
+          <label>Vía común:</label>
+          <input type="text" id="batchVia" placeholder="Ej: Vía Camilo C - Fredonia" />
+        </div>
+        <div class="form-group">
+          <label>Municipio común:</label>
+          <input type="text" id="batchMunicipio" placeholder="Ej: Amagá" />
+        </div>
+        <div class="form-group">
+          <label>Frente común:</label>
+          <input type="text" id="batchFrente" placeholder="Ej: Frente 1" />
+        </div>
+        <button type="button" class="btn-replicate" id="btnReplicateBatch">
+          Aplicar a Todas
+        </button>
+      </div>
+    </section>
+
     <!-- Barra de Control -->
     <section class="action-bar">
-      <span id="selectedCount">0 fotos seleccionadas</span>
+      <span id="selectedCount" style="font-weight: 600;">0 fotos seleccionadas</span>
       <button id="btnUpload" class="btn-upload" disabled>SUBIR FOTOGRAFÍAS</button>
     </section>
 
@@ -37,7 +66,7 @@
     <section id="summarySection" style="display: none;"></section>
   </main>
 
-  <!-- Inyección de módulos JavaScript -->
+  <!-- Inyección de módulos JavaScript en orden estricto -->
   <script src="config/config.js"></script>
   <script src="js/validation.js"></script>
   <script src="js/api.js"></script>
