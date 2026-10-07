@@ -1,0 +1,2274 @@
+{
+  "type": "FeatureCollection",
+  "name": "Municipios_Antioquia",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "1",
+        "municipio": "Medellin",
+        "subregion": "VALLE DE ABURRA",
+        "num_veredas": 57,
+        "lat": 6.25984,
+        "lon": -75.62378
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62378,
+          6.25984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "2",
+        "municipio": "Abejorral",
+        "subregion": "ORIENTE",
+        "num_veredas": 69,
+        "lat": 5.80533,
+        "lon": -75.44776
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.44776,
+          5.80533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "4",
+        "municipio": "Abriaqui",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 14,
+        "lat": 6.65446,
+        "lon": -76.08265
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.08265,
+          6.65446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "21",
+        "municipio": "Alejandria",
+        "subregion": "ORIENTE",
+        "num_veredas": 18,
+        "lat": 6.35799,
+        "lon": -75.09852
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.09852,
+          6.35799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "30",
+        "municipio": "Amaga",
+        "subregion": "SUROESTE",
+        "num_veredas": 26,
+        "lat": 6.03964,
+        "lon": -75.70056
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70056,
+          6.03964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "31",
+        "municipio": "Amalfi",
+        "subregion": "NORDESTE",
+        "num_veredas": 55,
+        "lat": 6.94398,
+        "lon": -74.98695
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.98695,
+          6.94398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "34",
+        "municipio": "Andes",
+        "subregion": "SUROESTE",
+        "num_veredas": 69,
+        "lat": 5.64714,
+        "lon": -75.89675
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.89675,
+          5.64714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "36",
+        "municipio": "Angelopolis",
+        "subregion": "SUROESTE",
+        "num_veredas": 15,
+        "lat": 6.11145,
+        "lon": -75.72441
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.72441,
+          6.11145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "38",
+        "municipio": "Angostura",
+        "subregion": "NORTE",
+        "num_veredas": 47,
+        "lat": 6.89199,
+        "lon": -75.31491
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.31491,
+          6.89199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "40",
+        "municipio": "Anori",
+        "subregion": "NORDESTE",
+        "num_veredas": 57,
+        "lat": 7.11151,
+        "lon": -75.15533
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.15533,
+          7.11151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "42",
+        "municipio": "Santa Fe De Antioquia",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 50,
+        "lat": 6.52402,
+        "lon": -75.912
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.912,
+          6.52402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "44",
+        "municipio": "Anza",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 20,
+        "lat": 6.2979,
+        "lon": -75.92101
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.92101,
+          6.2979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "45",
+        "municipio": "Apartado",
+        "subregion": "URABA",
+        "num_veredas": 58,
+        "lat": 7.88389,
+        "lon": -76.58431
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.58431,
+          7.88389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "51",
+        "municipio": "Arboletes",
+        "subregion": "URABA",
+        "num_veredas": 71,
+        "lat": 8.61689,
+        "lon": -76.41243
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.41243,
+          8.61689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "55",
+        "municipio": "Argelia",
+        "subregion": "ORIENTE",
+        "num_veredas": 54,
+        "lat": 5.71083,
+        "lon": -75.10461
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.10461,
+          5.71083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "59",
+        "municipio": "Armenia",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 12,
+        "lat": 6.15701,
+        "lon": -75.78973
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.78973,
+          6.15701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "79",
+        "municipio": "Barbosa",
+        "subregion": "VALLE DE ABURRA",
+        "num_veredas": 59,
+        "lat": 6.43654,
+        "lon": -75.33359
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.33359,
+          6.43654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "86",
+        "municipio": "Belmira",
+        "subregion": "NORTE",
+        "num_veredas": 19,
+        "lat": 6.62475,
+        "lon": -75.63625
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.63625,
+          6.62475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "88",
+        "municipio": "Bello",
+        "subregion": "VALLE DE ABURRA",
+        "num_veredas": 17,
+        "lat": 6.3553,
+        "lon": -75.58678
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58678,
+          6.3553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "91",
+        "municipio": "Betania",
+        "subregion": "SUROESTE",
+        "num_veredas": 31,
+        "lat": 5.73801,
+        "lon": -75.96003
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.96003,
+          5.73801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "93",
+        "municipio": "Betulia",
+        "subregion": "SUROESTE",
+        "num_veredas": 45,
+        "lat": 6.18323,
+        "lon": -75.97287
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.97287,
+          6.18323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "101",
+        "municipio": "Ciudad Bolivar",
+        "subregion": "SUROESTE",
+        "num_veredas": 23,
+        "lat": 5.84428,
+        "lon": -76.00928
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.00928,
+          5.84428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "107",
+        "municipio": "BriceãO",
+        "subregion": "NORTE",
+        "num_veredas": 41,
+        "lat": 7.12687,
+        "lon": -75.56313
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56313,
+          7.12687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "113",
+        "municipio": "Buritica",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 40,
+        "lat": 6.7877,
+        "lon": -75.91259
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.91259,
+          6.7877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "120",
+        "municipio": "Caceres",
+        "subregion": "BAJO CAUCA",
+        "num_veredas": 52,
+        "lat": 7.69861,
+        "lon": -75.21676
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.21676,
+          7.69861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "125",
+        "municipio": "Caicedo",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 20,
+        "lat": 6.4155,
+        "lon": -75.98026
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.98026,
+          6.4155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "129",
+        "municipio": "Caldas",
+        "subregion": "VALLE DE ABURRA",
+        "num_veredas": 31,
+        "lat": 6.06896,
+        "lon": -75.63703
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.63703,
+          6.06896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "134",
+        "municipio": "Campamento",
+        "subregion": "NORTE",
+        "num_veredas": 45,
+        "lat": 7.0367,
+        "lon": -75.28469
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.28469,
+          7.0367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "138",
+        "municipio": "CaãAsgordas",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 66,
+        "lat": 6.80898,
+        "lon": -76.04143
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.04143,
+          6.80898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "142",
+        "municipio": "Caracoli",
+        "subregion": "MAGDALENA MEDIO",
+        "num_veredas": 17,
+        "lat": 6.3564,
+        "lon": -74.74707
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.74707,
+          6.3564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "145",
+        "municipio": "Caramanta",
+        "subregion": "SUROESTE",
+        "num_veredas": 27,
+        "lat": 5.55654,
+        "lon": -75.62406
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62406,
+          5.55654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "147",
+        "municipio": "Carepa",
+        "subregion": "URABA",
+        "num_veredas": 36,
+        "lat": 7.78685,
+        "lon": -76.64445
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.64445,
+          7.78685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "148",
+        "municipio": "El Carmen De Viboral",
+        "subregion": "ORIENTE",
+        "num_veredas": 62,
+        "lat": 6.01646,
+        "lon": -75.27495
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.27495,
+          6.01646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "150",
+        "municipio": "Carolina",
+        "subregion": "NORTE",
+        "num_veredas": 9,
+        "lat": 6.73702,
+        "lon": -75.29646
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.29646,
+          6.73702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "154",
+        "municipio": "Caucasia",
+        "subregion": "BAJO CAUCA",
+        "num_veredas": 55,
+        "lat": 7.82582,
+        "lon": -75.02107
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.02107,
+          7.82582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "172",
+        "municipio": "Chigorodo",
+        "subregion": "URABA",
+        "num_veredas": 35,
+        "lat": 7.62907,
+        "lon": -76.66129
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.66129,
+          7.62907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "190",
+        "municipio": "Cisneros",
+        "subregion": "NORDESTE",
+        "num_veredas": 15,
+        "lat": 6.54217,
+        "lon": -75.08255
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.08255,
+          6.54217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "197",
+        "municipio": "Cocorna",
+        "subregion": "ORIENTE",
+        "num_veredas": 80,
+        "lat": 6.00398,
+        "lon": -75.15629
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.15629,
+          6.00398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "206",
+        "municipio": "Concepcion",
+        "subregion": "ORIENTE",
+        "num_veredas": 26,
+        "lat": 6.38399,
+        "lon": -75.23216
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.23216,
+          6.38399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "209",
+        "municipio": "Concordia",
+        "subregion": "SUROESTE",
+        "num_veredas": 29,
+        "lat": 6.05709,
+        "lon": -75.90785
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.90785,
+          6.05709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "212",
+        "municipio": "Copacabana",
+        "subregion": "VALLE DE ABURRA",
+        "num_veredas": 16,
+        "lat": 6.35068,
+        "lon": -75.49633
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.49633,
+          6.35068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "234",
+        "municipio": "Dabeiba",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 104,
+        "lat": 7.01371,
+        "lon": -76.21355
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.21355,
+          7.01371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "237",
+        "municipio": "Donmatias",
+        "subregion": "NORTE",
+        "num_veredas": 23,
+        "lat": 6.50736,
+        "lon": -75.36141
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.36141,
+          6.50736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "240",
+        "municipio": "Ebejico",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 38,
+        "lat": 6.32301,
+        "lon": -75.76081
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.76081,
+          6.32301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "250",
+        "municipio": "El Bagre",
+        "subregion": "BAJO CAUCA",
+        "num_veredas": 59,
+        "lat": 7.67635,
+        "lon": -74.71817
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.71817,
+          7.67635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "264",
+        "municipio": "Entrerrios",
+        "subregion": "NORTE",
+        "num_veredas": 13,
+        "lat": 6.57543,
+        "lon": -75.5396
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5396,
+          6.57543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "266",
+        "municipio": "Envigado",
+        "subregion": "VALLE DE ABURRA",
+        "num_veredas": 8,
+        "lat": 6.15804,
+        "lon": -75.54179
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54179,
+          6.15804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "282",
+        "municipio": "Fredonia",
+        "subregion": "SUROESTE",
+        "num_veredas": 42,
+        "lat": 5.91887,
+        "lon": -75.679
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.679,
+          5.91887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "284",
+        "municipio": "Frontino",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 61,
+        "lat": 6.7624,
+        "lon": -76.24489
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.24489,
+          6.7624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "306",
+        "municipio": "Giraldo",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 19,
+        "lat": 6.67638,
+        "lon": -75.94742
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.94742,
+          6.67638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "308",
+        "municipio": "Girardota",
+        "subregion": "VALLE DE ABURRA",
+        "num_veredas": 26,
+        "lat": 6.38208,
+        "lon": -75.44598
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.44598,
+          6.38208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "310",
+        "municipio": "Gomez Plata",
+        "subregion": "NORTE",
+        "num_veredas": 33,
+        "lat": 6.70683,
+        "lon": -75.19544
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19544,
+          6.70683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "313",
+        "municipio": "Granada",
+        "subregion": "ORIENTE",
+        "num_veredas": 53,
+        "lat": 6.1155,
+        "lon": -75.13271
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.13271,
+          6.1155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "315",
+        "municipio": "Guadalupe",
+        "subregion": "NORTE",
+        "num_veredas": 22,
+        "lat": 6.85554,
+        "lon": -75.22439
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.22439,
+          6.85554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "318",
+        "municipio": "Guarne",
+        "subregion": "ORIENTE",
+        "num_veredas": 33,
+        "lat": 6.26958,
+        "lon": -75.43367
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.43367,
+          6.26958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "321",
+        "municipio": "Guatape",
+        "subregion": "ORIENTE",
+        "num_veredas": 12,
+        "lat": 6.24169,
+        "lon": -75.16045
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.16045,
+          6.24169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "347",
+        "municipio": "Heliconia",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 22,
+        "lat": 6.20845,
+        "lon": -75.74361
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.74361,
+          6.20845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "353",
+        "municipio": "Hispania",
+        "subregion": "SUROESTE",
+        "num_veredas": 12,
+        "lat": 5.79178,
+        "lon": -75.90694
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.90694,
+          5.79178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "360",
+        "municipio": "Itagui",
+        "subregion": "VALLE DE ABURRA",
+        "num_veredas": 9,
+        "lat": 6.18511,
+        "lon": -75.61422
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61422,
+          6.18511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "361",
+        "municipio": "Ituango",
+        "subregion": "NORTE",
+        "num_veredas": 112,
+        "lat": 7.26324,
+        "lon": -75.72113
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.72113,
+          7.26324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "364",
+        "municipio": "Jardin",
+        "subregion": "SUROESTE",
+        "num_veredas": 23,
+        "lat": 5.5861,
+        "lon": -75.83918
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.83918,
+          5.5861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "368",
+        "municipio": "Jerico",
+        "subregion": "SUROESTE",
+        "num_veredas": 33,
+        "lat": 5.77926,
+        "lon": -75.76801
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.76801,
+          5.77926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "376",
+        "municipio": "La Ceja",
+        "subregion": "ORIENTE",
+        "num_veredas": 19,
+        "lat": 5.98385,
+        "lon": -75.44293
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.44293,
+          5.98385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "380",
+        "municipio": "La Estrella",
+        "subregion": "VALLE DE ABURRA",
+        "num_veredas": 21,
+        "lat": 6.13178,
+        "lon": -75.6432
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6432,
+          6.13178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "390",
+        "municipio": "La Pintada",
+        "subregion": "SUROESTE",
+        "num_veredas": 5,
+        "lat": 5.73311,
+        "lon": -75.60484
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60484,
+          5.73311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "400",
+        "municipio": "La Union",
+        "subregion": "ORIENTE",
+        "num_veredas": 29,
+        "lat": 5.94563,
+        "lon": -75.35475
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.35475,
+          5.94563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "411",
+        "municipio": "Liborina",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 43,
+        "lat": 6.71941,
+        "lon": -75.78114
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.78114,
+          6.71941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "425",
+        "municipio": "Maceo",
+        "subregion": "MAGDALENA MEDIO",
+        "num_veredas": 24,
+        "lat": 6.54571,
+        "lon": -74.75114
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.75114,
+          6.54571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "440",
+        "municipio": "Marinilla",
+        "subregion": "ORIENTE",
+        "num_veredas": 34,
+        "lat": 6.18282,
+        "lon": -75.30677
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.30677,
+          6.18282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "467",
+        "municipio": "Montebello",
+        "subregion": "SUROESTE",
+        "num_veredas": 30,
+        "lat": 5.92394,
+        "lon": -75.52517
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.52517,
+          5.92394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "475",
+        "municipio": "Murindo",
+        "subregion": "URABA",
+        "num_veredas": 25,
+        "lat": 6.86071,
+        "lon": -76.7271
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.7271,
+          6.86071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "480",
+        "municipio": "Mutata",
+        "subregion": "URABA",
+        "num_veredas": 46,
+        "lat": 7.35678,
+        "lon": -76.55771
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.55771,
+          7.35678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "483",
+        "municipio": "NariãO",
+        "subregion": "ORIENTE",
+        "num_veredas": 54,
+        "lat": 5.59196,
+        "lon": -75.1752
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1752,
+          5.59196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "490",
+        "municipio": "Necocli",
+        "subregion": "URABA",
+        "num_veredas": 125,
+        "lat": 8.48455,
+        "lon": -76.67151
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.67151,
+          8.48455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "495",
+        "municipio": "Nechi",
+        "subregion": "BAJO CAUCA",
+        "num_veredas": 27,
+        "lat": 7.9825,
+        "lon": -74.80526
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.80526,
+          7.9825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "501",
+        "municipio": "Olaya",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 14,
+        "lat": 6.61214,
+        "lon": -75.77443
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.77443,
+          6.61214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "541",
+        "municipio": "El PeãOl",
+        "subregion": "ORIENTE",
+        "num_veredas": 28,
+        "lat": 6.23159,
+        "lon": -75.22453
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.22453,
+          6.23159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "543",
+        "municipio": "Peque",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 44,
+        "lat": 7.02403,
+        "lon": -75.88745
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.88745,
+          7.02403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "576",
+        "municipio": "Pueblorrico",
+        "subregion": "SUROESTE",
+        "num_veredas": 21,
+        "lat": 5.7952,
+        "lon": -75.85283
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.85283,
+          5.7952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "579",
+        "municipio": "Puerto Berrio",
+        "subregion": "MAGDALENA MEDIO",
+        "num_veredas": 27,
+        "lat": 6.47561,
+        "lon": -74.55427
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.55427,
+          6.47561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "587",
+        "municipio": "Puerto Nare",
+        "subregion": "MAGDALENA MEDIO",
+        "num_veredas": 30,
+        "lat": 6.14273,
+        "lon": -74.69523
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.69523,
+          6.14273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "591",
+        "municipio": "Puerto Triunfo",
+        "subregion": "MAGDALENA MEDIO",
+        "num_veredas": 18,
+        "lat": 5.94476,
+        "lon": -74.69258
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.69258,
+          5.94476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "604",
+        "municipio": "Remedios",
+        "subregion": "",
+        "num_veredas": 1,
+        "lat": 7.08243,
+        "lon": -74.74728
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.74728,
+          7.08243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "604",
+        "municipio": "Remedios",
+        "subregion": "NORDESTE",
+        "num_veredas": 54,
+        "lat": 6.98692,
+        "lon": -74.64569
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.64569,
+          6.98692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "607",
+        "municipio": "El Retiro",
+        "subregion": "ORIENTE",
+        "num_veredas": 23,
+        "lat": 6.03853,
+        "lon": -75.50382
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.50382,
+          6.03853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "615",
+        "municipio": "Rionegro",
+        "subregion": "ORIENTE",
+        "num_veredas": 40,
+        "lat": 6.15415,
+        "lon": -75.40641
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.40641,
+          6.15415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "628",
+        "municipio": "Sabanalarga",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 36,
+        "lat": 6.8877,
+        "lon": -75.78925
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.78925,
+          6.8877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "631",
+        "municipio": "Sabaneta",
+        "subregion": "VALLE DE ABURRA",
+        "num_veredas": 12,
+        "lat": 6.14175,
+        "lon": -75.61251
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61251,
+          6.14175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "642",
+        "municipio": "Salgar",
+        "subregion": "SUROESTE",
+        "num_veredas": 37,
+        "lat": 5.96604,
+        "lon": -75.96774
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.96774,
+          5.96604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "647",
+        "municipio": "San Andres De Cuerquia",
+        "subregion": "NORTE",
+        "num_veredas": 28,
+        "lat": 6.94281,
+        "lon": -75.66024
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.66024,
+          6.94281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "649",
+        "municipio": "San Carlos",
+        "subregion": "ORIENTE",
+        "num_veredas": 88,
+        "lat": 6.18928,
+        "lon": -74.92436
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.92436,
+          6.18928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "652",
+        "municipio": "San Francisco",
+        "subregion": "ORIENTE",
+        "num_veredas": 44,
+        "lat": 5.90476,
+        "lon": -75.02052
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.02052,
+          5.90476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "656",
+        "municipio": "San Jeronimo",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 38,
+        "lat": 6.43285,
+        "lon": -75.70395
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70395,
+          6.43285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "658",
+        "municipio": "San Jose De La MontaãA",
+        "subregion": "NORTE",
+        "num_veredas": 9,
+        "lat": 6.82758,
+        "lon": -75.68372
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.68372,
+          6.82758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "659",
+        "municipio": "San Juan De Uraba",
+        "subregion": "URABA",
+        "num_veredas": 41,
+        "lat": 8.71121,
+        "lon": -76.54169
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.54169,
+          8.71121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "660",
+        "municipio": "San Luis",
+        "subregion": "ORIENTE",
+        "num_veredas": 52,
+        "lat": 6.03087,
+        "lon": -74.96636
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.96636,
+          6.03087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "664",
+        "municipio": "San Pedro De Los Milagros",
+        "subregion": "NORTE",
+        "num_veredas": 24,
+        "lat": 6.45409,
+        "lon": -75.57916
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57916,
+          6.45409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "665",
+        "municipio": "San Pedro De Uraba",
+        "subregion": "URABA",
+        "num_veredas": 66,
+        "lat": 8.36986,
+        "lon": -76.31766
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.31766,
+          8.36986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "667",
+        "municipio": "San Rafael",
+        "subregion": "ORIENTE",
+        "num_veredas": 59,
+        "lat": 6.31342,
+        "lon": -75.00575
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.00575,
+          6.31342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "670",
+        "municipio": "San Roque",
+        "subregion": "NORDESTE",
+        "num_veredas": 53,
+        "lat": 6.46736,
+        "lon": -74.94957
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.94957,
+          6.46736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "674",
+        "municipio": "San Vicente",
+        "subregion": "ORIENTE",
+        "num_veredas": 41,
+        "lat": 6.30526,
+        "lon": -75.31926
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.31926,
+          6.30526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "679",
+        "municipio": "Santa Barbara",
+        "subregion": "SUROESTE",
+        "num_veredas": 46,
+        "lat": 5.88528,
+        "lon": -75.57545
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57545,
+          5.88528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "686",
+        "municipio": "Santa Rosa De Osos",
+        "subregion": "NORTE",
+        "num_veredas": 80,
+        "lat": 6.64641,
+        "lon": -75.40711
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.40711,
+          6.64641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "690",
+        "municipio": "Santo Domingo",
+        "subregion": "NORDESTE",
+        "num_veredas": 51,
+        "lat": 6.49618,
+        "lon": -75.14339
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.14339,
+          6.49618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "697",
+        "municipio": "El Santuario",
+        "subregion": "ORIENTE",
+        "num_veredas": 37,
+        "lat": 6.12778,
+        "lon": -75.25003
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.25003,
+          6.12778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "736",
+        "municipio": "Segovia",
+        "subregion": "NORDESTE",
+        "num_veredas": 25,
+        "lat": 7.21264,
+        "lon": -74.72082
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.72082,
+          7.21264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "756",
+        "municipio": "Sonson",
+        "subregion": "ORIENTE",
+        "num_veredas": 112,
+        "lat": 5.74431,
+        "lon": -75.19666
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19666,
+          5.74431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "761",
+        "municipio": "Sopetran",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 37,
+        "lat": 6.52889,
+        "lon": -75.74098
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.74098,
+          6.52889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "789",
+        "municipio": "Tamesis",
+        "subregion": "SUROESTE",
+        "num_veredas": 41,
+        "lat": 5.66171,
+        "lon": -75.70383
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70383,
+          5.66171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "790",
+        "municipio": "Taraza",
+        "subregion": "BAJO CAUCA",
+        "num_veredas": 47,
+        "lat": 7.53874,
+        "lon": -75.41857
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.41857,
+          7.53874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "792",
+        "municipio": "Tarso",
+        "subregion": "SUROESTE",
+        "num_veredas": 17,
+        "lat": 5.86684,
+        "lon": -75.84218
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.84218,
+          5.86684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "809",
+        "municipio": "Titiribi",
+        "subregion": "SUROESTE",
+        "num_veredas": 22,
+        "lat": 6.06237,
+        "lon": -75.78719
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.78719,
+          6.06237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "819",
+        "municipio": "Toledo",
+        "subregion": "NORTE",
+        "num_veredas": 23,
+        "lat": 6.99796,
+        "lon": -75.70409
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70409,
+          6.99796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "837",
+        "municipio": "Turbo",
+        "subregion": "URABA",
+        "num_veredas": 235,
+        "lat": 8.04403,
+        "lon": -76.62834
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.62834,
+          8.04403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "842",
+        "municipio": "Uramita",
+        "subregion": "OCCIDENTE",
+        "num_veredas": 44,
+        "lat": 6.90091,
+        "lon": -76.1435
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1435,
+          6.90091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "847",
+        "municipio": "Urrao",
+        "subregion": "SUROESTE",
+        "num_veredas": 61,
+        "lat": 6.30368,
+        "lon": -76.16817
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.16817,
+          6.30368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "854",
+        "municipio": "Valdivia",
+        "subregion": "NORTE",
+        "num_veredas": 39,
+        "lat": 7.27491,
+        "lon": -75.38629
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.38629,
+          7.27491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "856",
+        "municipio": "Valparaiso",
+        "subregion": "SUROESTE",
+        "num_veredas": 24,
+        "lat": 5.63343,
+        "lon": -75.63939
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.63939,
+          5.63343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "858",
+        "municipio": "Vegachi",
+        "subregion": "NORDESTE",
+        "num_veredas": 26,
+        "lat": 6.82798,
+        "lon": -74.78545
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.78545,
+          6.82798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "861",
+        "municipio": "Venecia",
+        "subregion": "SUROESTE",
+        "num_veredas": 21,
+        "lat": 5.9516,
+        "lon": -75.7418
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.7418,
+          5.9516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "873",
+        "municipio": "Vigia Del Fuerte",
+        "subregion": "URABA",
+        "num_veredas": 43,
+        "lat": 6.43602,
+        "lon": -76.70015
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.70015,
+          6.43602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "885",
+        "municipio": "Yali",
+        "subregion": "NORDESTE",
+        "num_veredas": 28,
+        "lat": 6.71749,
+        "lon": -74.76314
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.76314,
+          6.71749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "887",
+        "municipio": "Yarumal",
+        "subregion": "NORTE",
+        "num_veredas": 59,
+        "lat": 6.99979,
+        "lon": -75.44944
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.44944,
+          6.99979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "890",
+        "municipio": "Yolombo",
+        "subregion": "NORDESTE",
+        "num_veredas": 79,
+        "lat": 6.63005,
+        "lon": -74.95735
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.95735,
+          6.63005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "893",
+        "municipio": "Yondo",
+        "subregion": "MAGDALENA MEDIO",
+        "num_veredas": 62,
+        "lat": 6.99444,
+        "lon": -74.07321
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07321,
+          6.99444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cod_mpio": "895",
+        "municipio": "Zaragoza",
+        "subregion": "BAJO CAUCA",
+        "num_veredas": 70,
+        "lat": 7.49591,
+        "lon": -74.86277
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.86277,
+          7.49591
+        ]
+      }
+    }
+  ]
+}

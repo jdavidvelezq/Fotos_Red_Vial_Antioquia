@@ -1,0 +1,758 @@
+/* ==========================================================================
+   Fotos Red Vial Antioquia - Módulo GIS y Visor Geográfico
+   Estilos institucionales Gobernación de Antioquia • Secretaría de Infraestructura
+   ========================================================================== */
+
+/* Navegación por pestañas institucional en la cabecera */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header-branding {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-shield {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.header-nav {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nav-tab {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-tab:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.nav-tab.active {
+  background: var(--accent-gold);
+  color: #1a1a1a;
+  border-color: var(--accent-gold);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================================
+   ESTRUCTURA DEL VISOR GIS
+   ========================================================================== */
+
+#moduloGis {
+  padding: 10px 15px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Barra de Indicadores KPI */
+.gis-kpi-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.kpi-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-left: 4px solid var(--primary-light);
+}
+
+.kpi-icon {
+  font-size: 1.8rem;
+}
+
+.kpi-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.kpi-val {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  line-height: 1.2;
+}
+
+.kpi-lbl {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Layout de 3 Columnas */
+.gis-main-layout {
+  display: grid;
+  grid-template-columns: 310px 1fr 340px;
+  gap: 14px;
+  height: calc(100vh - 200px);
+  min-height: 600px;
+}
+
+/* Panel Izquierdo: Filtros y Búsqueda */
+.gis-filters-panel {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.panel-header h3 {
+  font-size: 1.05rem;
+  color: var(--primary-dark);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-box-container {
+  margin-bottom: 14px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 9px 12px;
+  font-size: 0.88rem;
+  border: 1.5px solid var(--border-color);
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(22, 122, 71, 0.15);
+}
+
+.filter-group {
+  margin-bottom: 12px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.filter-select, .filter-input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 0.88rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: white;
+  color: var(--text-main);
+}
+
+.filter-select:focus, .filter-input:focus {
+  border-color: var(--primary-light);
+  outline: none;
+}
+
+.filter-row-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.filters-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+}
+
+.btn-apply-filters {
+  background: var(--primary-dark);
+  color: white;
+  border: none;
+  padding: 9px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-apply-filters:hover {
+  background: var(--primary-light);
+}
+
+.btn-clear-filters {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid var(--border-color);
+  padding: 9px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-clear-filters:hover {
+  background: #e2e8f0;
+}
+
+/* Modos de visualización (Puntos / Densidad) */
+.view-mode-toggle {
+  display: flex;
+  background: #e2e8f0;
+  padding: 3px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.view-mode-btn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #475569;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.view-mode-btn.active {
+  background: white;
+  color: var(--primary-dark);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Panel Central: Mapa Leaflet */
+.gis-map-panel {
+  position: relative;
+  background: #e5e7eb;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+#gisMap {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Barra de herramientas flotante sobre el mapa */
+.map-tools-floating {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.map-tool-btn {
+  background: white;
+  border: 1px solid #cbd5e1;
+  color: #1e293b;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: all 0.15s ease;
+}
+
+.map-tool-btn:hover {
+  background: #f8fafc;
+  color: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+/* Selector de capas / Mapa base */
+.base-layer-box {
+  position: absolute;
+  bottom: 24px;
+  left: 12px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.base-layer-box span {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.base-layer-pill {
+  border: 1px solid #cbd5e1;
+  background: white;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.base-layer-pill.active {
+  background: var(--primary-dark);
+  color: white;
+  border-color: var(--primary-dark);
+}
+
+/* Panel Derecho: Información del Registro */
+.gis-detail-panel {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.empty-detail-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 20px;
+}
+
+.empty-detail-state .icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.record-badge-id {
+  background: var(--primary-dark);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 14px;
+  font-size: 0.85rem;
+}
+
+.detail-table th {
+  text-align: left;
+  color: var(--text-muted);
+  font-weight: 600;
+  padding: 6px 4px;
+  border-bottom: 1px solid #f1f5f9;
+  width: 40%;
+}
+
+.detail-table td {
+  padding: 6px 4px;
+  border-bottom: 1px solid #f1f5f9;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.detail-photo-preview {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  margin-bottom: 14px;
+  background: #f8fafc;
+  cursor: pointer;
+  text-align: center;
+}
+
+.detail-photo-preview img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10, 74, 43, 0.85);
+  color: white;
+  padding: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn-open-gallery {
+  width: 100%;
+  background: var(--primary-light);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+}
+
+.btn-open-gallery:hover {
+  background: var(--primary-dark);
+}
+
+.btn-open-maps {
+  width: 100%;
+  background: white;
+  color: #0284c7;
+  border: 1px solid #0284c7;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-open-maps:hover {
+  background: #e0f2fe;
+}
+
+/* ==========================================================================
+   ESTILOS PERSONALIZADOS LEAFLET Y CLUSTERING
+   ========================================================================== */
+
+.custom-photo-pin {
+  background: var(--primary-dark);
+  color: white;
+  border: 2px solid white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.custom-photo-pin:hover {
+  transform: scale(1.15);
+  transition: transform 0.15s;
+}
+
+/* Cluster styling */
+.marker-cluster-small,
+.marker-cluster-medium,
+.marker-cluster-large {
+  background-color: rgba(10, 74, 43, 0.6) !important;
+}
+
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div {
+  background-color: var(--primary-dark) !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-family: inherit !important;
+}
+
+/* Popups */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border-top: 4px solid var(--accent-gold);
+}
+
+.leaflet-popup-content {
+  font-family: inherit;
+  margin: 12px 14px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.popup-title {
+  font-weight: 700;
+  color: var(--primary-dark);
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.popup-field {
+  margin-bottom: 3px;
+}
+
+.popup-btn {
+  display: inline-block;
+  margin-top: 8px;
+  background: var(--primary-dark);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   MODAL DE GALERÍA FOTOGRÁFICA
+   ========================================================================== */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-card {
+  background: white;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.modal-header {
+  background: var(--primary-dark);
+  color: white;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--accent-gold);
+}
+
+.modal-header h3 {
+  font-size: 1.1rem;
+}
+
+.modal-close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-body {
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-img-container {
+  max-height: 55vh;
+  width: 100%;
+  background: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.modal-img-container img {
+  max-width: 100%;
+  max-height: 55vh;
+  object-fit: contain;
+}
+
+.modal-gallery-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.btn-nav-gallery {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btn-nav-gallery:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Botón flotante móvil para filtros */
+.btn-mobile-filters-trigger {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1001;
+  background: var(--primary-dark);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   RESPONSIVIDAD Y DISPOSITIVOS MÓVILES
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .gis-main-layout {
+    grid-template-columns: 280px 1fr;
+    height: calc(100vh - 220px);
+  }
+
+  .gis-detail-panel {
+    display: none; /* Se muestra como modal o panel inferior en pantallas medianas */
+  }
+
+  .gis-detail-panel.mobile-visible {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 50vh;
+    z-index: 2000;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.25);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-nav {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .gis-main-layout {
+    grid-template-columns: 1fr;
+    height: calc(100vh - 260px);
+  }
+
+  .gis-filters-panel {
+    display: none;
+  }
+
+  .gis-filters-panel.mobile-drawer-open {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85vw;
+    max-width: 340px;
+    height: 100vh;
+    z-index: 3000;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.3);
+  }
+
+  .btn-mobile-filters-trigger {
+    display: block;
+  }
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fotos Red Vial Antioquia - Módulo de Carga e Inventario Geográfico</title>
+  <!-- Favicon para evitar error 404 en favicon.ico -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛣️</text></svg>" />
+  
+  <!-- Leaflet GIS y MarkerCluster CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+  <!-- Estilos de la aplicación -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="map.css" />
+</head>
+<body>
+
+  <!-- Cabecera Institucional con Identidad Gobernación de Antioquia -->
+  <header>
+    <div class="container" style="max-width: 1600px; margin: 0 auto; padding: 0 10px;">
+      <div class="header-top">
+        <div class="header-branding">
+          <div class="header-shield" title="Gobernación de Antioquia">🛣️</div>
+          <div>
+            <h1 style="font-size: 1.4rem; letter-spacing: -0.3px;">GOBERNACIÓN DE ANTIOQUIA</h1>
+            <p style="font-size: 0.88rem; opacity: 0.95; margin-top: 2px;">
+              Fotos Red Vial Antioquia • Módulo de Carga e Inventario Geográfico • Secretaría de Infraestructura
+            </p>
+          </div>
+        </div>
+
+        <!-- Acciones y Navegación entre Módulos -->
+        <nav class="header-nav">
+          <button type="button" class="nav-tab active" id="tabNavUpload" title="Ir al módulo de carga de fotografías">
+            📤 Cargar Fotografías
+          </button>
+          <button type="button" class="nav-tab" id="tabNavGis" title="Ir al Visor Geográfico de la Red Vial">
+            🗺️ Visor GIS de la Red Vial
+          </button>
+          <button type="button" class="nav-tab" id="tabNavHelp" title="Consultar ayuda y guía institucional">
+            ℹ️ Ayuda
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MÓDULO 1: CARGA DE FOTOGRAFÍAS (MÓDULO ACTUAL INTACTO)
+       ====================================================================== -->
+  <div id="moduloCarga">
+    <main class="container">
+      <!-- Selector de Archivos y Zona Drag & Drop -->
+      <section class="selector-box" id="dropArea" title="Haga clic o arrastre fotografías de inspección aquí">
+        <h2>Seleccionar Fotografías de Inspección</h2>
+        <p>Arrastre y suelte fotos aquí o examine desde su dispositivo</p>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Formatos aceptados: JPG, PNG, WEBP (hasta 20 MB por archivo • EXIF GPS automático)</p>
+        <label for="filePicker" class="btn-select">Examinar Archivos</label>
+        <input type="file" id="filePicker" multiple accept="image/jpeg,image/png,image/webp" />
+      </section>
+
+      <!-- Barra de Relleno Rápido de Lote (Aparece al haber fotos) -->
+      <section class="batch-toolbar" id="batchToolbar" style="display: none;">
+        <div class="batch-toolbar-header">
+          ⚡ Relleno Rápido: Aplicar Contrato y Vía a todas las fotos seleccionadas
+        </div>
+        <div class="batch-grid">
+          <div class="form-group">
+            <label for="batchContrato">Contrato común:</label>
+            <input type="text" id="batchContrato" placeholder="Ej: 4600018621" />
+          </div>
+          <div class="form-group">
+            <label for="batchVia">Vía común:</label>
+            <input type="text" id="batchVia" placeholder="Ej: Vía Camilo C - Fredonia" />
+          </div>
+          <div class="form-group">
+            <label for="batchMunicipio">Municipio común:</label>
+            <input type="text" id="batchMunicipio" placeholder="Ej: Amagá" />
+          </div>
+          <div class="form-group">
+            <label for="batchFrente">Frente común:</label>
+            <input type="text" id="batchFrente" placeholder="Ej: Frente 1" />
+          </div>
+          <button type="button" class="btn-replicate" id="btnReplicateBatch">
+            Aplicar a Todas
+          </button>
+        </div>
+      </section>
+
+      <!-- Barra de Control de Subida -->
+      <section class="action-bar">
+        <span id="selectedCount" style="font-weight: 600;">0 fotos seleccionadas</span>
+        <button id="btnUpload" class="btn-upload" disabled>SUBIR FOTOGRAFÍAS</button>
+      </section>
+
+      <!-- Listado de tarjetas de fotografías -->
+      <section id="photoGrid" class="photo-grid"></section>
+
+      <!-- Resumen posterior a la carga -->
+      <section id="summarySection" style="display: none;"></section>
+    </main>
+  </div>
+
+  <!-- ======================================================================
+       MÓDULO 2: VISOR GEOGRÁFICO GIS DE LA RED VIAL DE ANTIOQUIA
+       ====================================================================== -->
+  <div id="moduloGis" style="display: none;">
+    <!-- Barra de Indicadores Dinámicos (KPIs) -->
+    <section class="gis-kpi-bar">
+      <div class="kpi-card">
+        <div class="kpi-icon">📷</div>
+        <div class="kpi-data">
+          <span class="kpi-val" id="kpiTotalFotos">0</span>
+          <span class="kpi-lbl">Fotografías Registradas</span>
+        </div>
+      </div>
+      <div class="kpi-card" style="border-left-color: #0284c7;">
+        <div class="kpi-icon">📍</div>
+        <div class="kpi-data">
+          <span class="kpi-val" id="kpiPuntosGps" style="color: #0284c7;">0</span>
+          <span class="kpi-lbl">Puntos Georreferenciados</span>
+        </div>
+      </div>
+      <div class="kpi-card" style="border-left-color: var(--accent-gold);">
+        <div class="kpi-icon">🛣️</div>
+        <div class="kpi-data">
+          <span class="kpi-val" id="kpiTotalVias" style="color: #b45309;">0</span>
+          <span class="kpi-lbl">Tramos de Red Vial</span>
+        </div>
+      </div>
+      <div class="kpi-card" style="border-left-color: #8b5cf6;">
+        <div class="kpi-icon">🏛️</div>
+        <div class="kpi-data">
+          <span class="kpi-val" id="kpiTotalMpios" style="color: #6d28d9;">0</span>
+          <span class="kpi-lbl">Municipios Vinculados</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cuerpo Principal del Visor GIS (3 Columnas) -->
+    <div class="gis-main-layout">
+      <!-- Columna 1: Panel Lateral de Filtros y Búsqueda -->
+      <aside class="gis-filters-panel" id="gisFiltersPanel">
+        <div class="panel-header">
+          <h3>🔍 Filtros de Consulta</h3>
+          <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Casacada GIS</span>
+        </div>
+
+        <!-- Buscador Rápido -->
+        <div class="search-box-container">
+          <input type="text" id="gisSearchInput" class="search-input" placeholder="Buscar vía, código, mpio o ID..." />
+        </div>
+
+        <!-- Modos de visualización -->
+        <div class="view-mode-toggle">
+          <button type="button" class="view-mode-btn active" id="btnModePoints">📍 Puntos</button>
+          <button type="button" class="view-mode-btn" id="btnModeDensity" title="Modo densidad preparado">🔥 Densidad</button>
+        </div>
+
+        <!-- Filtro: Subregión -->
+        <div class="filter-group">
+          <label for="filterSubregion">Subregión:</label>
+          <select id="filterSubregion" class="filter-select">
+            <option value="TODAS">Todas las Subregiones</option>
+          </select>
+        </div>
+
+        <!-- Filtro: Municipio -->
+        <div class="filter-group">
+          <label for="filterMunicipio">Municipio:</label>
+          <select id="filterMunicipio" class="filter-select">
+            <option value="TODOS">Todos los Municipios</option>
+          </select>
+        </div>
+
+        <!-- Filtro: Tipo de Vía -->
+        <div class="filter-group">
+          <label for="filterTipoVia">Tipo de Vía:</label>
+          <select id="filterTipoVia" class="filter-select">
+            <option value="TODOS">Todos los Tipos</option>
+            <option value="PRIMARIA">Primaria</option>
+            <option value="SECUNDARIA">Secundaria</option>
+            <option value="TERCIARIA">Terciaria</option>
+          </select>
+        </div>
+
+        <!-- Filtro: Nombre de Vía -->
+        <div class="filter-group">
+          <label for="filterNombreVia">Nombre de Vía:</label>
+          <select id="filterNombreVia" class="filter-select">
+            <option value="TODAS">Todas las Vías</option>
+          </select>
+        </div>
+
+        <!-- Filtro: Código de Vía -->
+        <div class="filter-group">
+          <label for="filterCodigoVia">Código de Vía:</label>
+          <select id="filterCodigoVia" class="filter-select">
+            <option value="TODOS">Todos los Códigos</option>
+          </select>
+        </div>
+
+        <!-- Filtro: Rango de Fechas -->
+        <div class="filter-group">
+          <label>Rango de Fecha:</label>
+          <div class="filter-row-dates">
+            <input type="date" id="filterFechaDesde" class="filter-input" title="Fecha desde" />
+            <input type="date" id="filterFechaHasta" class="filter-input" title="Fecha hasta" />
+          </div>
+        </div>
+
+        <!-- Botones de Acción -->
+        <div class="filters-actions">
+          <button type="button" class="btn-apply-filters" id="btnAplicarFiltros">
+            Aplicar Filtros
+          </button>
+          <button type="button" class="btn-clear-filters" id="btnLimpiarFiltros">
+            Limpiar
+          </button>
+        </div>
+      </aside>
+
+      <!-- Columna 2: Mapa GIS Georreferenciado -->
+      <section class="gis-map-panel">
+        <div id="gisMap"></div>
+
+        <!-- Barra de Herramientas Flotante -->
+        <div class="map-tools-floating">
+          <button type="button" class="map-tool-btn" onclick="MapModule.miUbicacion()" title="📍 Mi ubicación GPS en vivo">
+            📍
+          </button>
+          <button type="button" class="map-tool-btn" onclick="MapModule.restablecerVista()" title="🔄 Restablecer vista a Antioquia">
+            🔄
+          </button>
+          <button type="button" class="map-tool-btn" onclick="MapModule.alternarPantallaCompleta()" title="⛶ Pantalla completa">
+            ⛶
+          </button>
+        </div>
+
+        <!-- Selector de Mapa Base (Calles / Satélite) -->
+        <div class="base-layer-box">
+          <span>Mapa:</span>
+          <button type="button" class="base-layer-pill active" id="btnBaseCalles" onclick="MapModule.cambiarMapaBase('calles'); document.getElementById('btnBaseCalles').classList.add('active'); document.getElementById('btnBaseSatelite').classList.remove('active');">
+            🗺️ Calles
+          </button>
+          <button type="button" class="base-layer-pill" id="btnBaseSatelite" onclick="MapModule.cambiarMapaBase('satelite'); document.getElementById('btnBaseSatelite').classList.add('active'); document.getElementById('btnBaseCalles').classList.remove('active');">
+            🛰️ Satélite
+          </button>
+        </div>
+      </section>
+
+      <!-- Columna 3: Panel Lateral de Información del Registro -->
+      <aside class="gis-detail-panel" id="gisDetailPanel">
+        <div class="panel-header">
+          <h3>📋 Información de Selección</h3>
+        </div>
+        <div id="gisDetailContent">
+          <div class="empty-detail-state">
+            <div class="icon">🗺️</div>
+            <h4>Ningún elemento seleccionado</h4>
+            <p style="font-size: 0.82rem; margin-top: 6px;">
+              Haga clic sobre un punto fotográfico 📷 o sobre una línea de la red vial 🛣️ para consultar su ficha técnica e histórico.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Botón Flotante para Dispositivos Móviles -->
+    <button type="button" class="btn-mobile-filters-trigger" id="btnToggleMobileFilters">
+      🔍 Filtros
+    </button>
+  </div>
+
+  <!-- ======================================================================
+       MODAL DE GALERÍA FOTOGRÁFICA INTERACTIVA
+       ====================================================================== -->
+  <div class="modal-backdrop" id="galleryModal" style="display: none;" onclick="if(event.target === this) PhotoViewer.cerrarModalGaleria()">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>📷 Visor de Fotografía e Inspección</h3>
+        <button type="button" class="modal-close-btn" onclick="PhotoViewer.cerrarModalGaleria()">&times;</button>
+      </div>
+      <div class="modal-body" id="galleryModalBody"></div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL DE AYUDA Y GUÍA INSTITUCIONAL
+       ====================================================================== -->
+  <div class="modal-backdrop" id="helpModal" style="display: none;" onclick="if(event.target === this) document.getElementById('helpModal').style.display='none'">
+    <div class="modal-card" style="max-width: 650px;">
+      <div class="modal-header">
+        <h3>ℹ️ Fotos Red Vial Antioquia - Guía Institucional</h3>
+        <button type="button" class="modal-close-btn" onclick="document.getElementById('helpModal').style.display='none'">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 24px; text-align: left; font-size: 0.9rem; line-height: 1.6;">
+        <h4 style="color: var(--primary-dark); margin-bottom: 8px;">1. Módulo de Carga</h4>
+        <p style="margin-bottom: 14px;">
+          Permite a los inspectores subir fotos desde campo. El sistema extrae automáticamente la fecha y coordenadas GPS del EXIF de la imagen, comprime la fotografía para ahorrar datos móviles y la guarda en carpetas de Google Drive y registros de Google Sheets.
+        </p>
+
+        <h4 style="color: var(--primary-dark); margin-bottom: 8px;">2. Visor GIS de la Red Vial</h4>
+        <p style="margin-bottom: 14px;">
+          Permite explorar visualmente los tramos de la red vial departamental y consultar las fotografías georreferenciadas. Puede filtrar por Subregión, Municipio, Vía o Rango de fechas, o seleccionar una vía para ver todo su inventario fotográfico.
+        </p>
+
+        <h4 style="color: var(--primary-dark); margin-bottom: 8px;">3. Simbología</h4>
+        <p>
+          • <strong>Línea Ámbar / Dorada:</strong> Red Vial Primaria.<br/>
+          • <strong>Línea Verde Oscura:</strong> Red Vial Secundaria.<br/>
+          • <strong>Línea Verde Clara:</strong> Red Vial Terciaria.<br/>
+          • <strong>📷 Marcador circular:</strong> Fotografía georreferenciada (agrupada en clúster al alejar el zoom).
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Librerías de Mapas GIS Leaflet y MarkerCluster -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <!-- Módulos JavaScript Existentes (Módulo de Carga) -->
+  <script src="config.js"></script>
+  <script src="validation.js"></script>
+  <script src="api.js"></script>
+  <script src="ui.js"></script>
+  <script src="upload.js"></script>
+
+  <!-- Módulos JavaScript Nuevos (Módulo GIS) -->
+  <script src="gisData.js"></script>
+  <script src="photoViewer.js"></script>
+  <script src="map.js"></script>
+  <script src="filters.js"></script>
+
+  <!-- Orquestador Principal de la Aplicación -->
+  <script src="app.js"></script>
+</body>
+</html>
